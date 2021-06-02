@@ -11,7 +11,7 @@ class NeuralNetwork():
 
     def sigmoid(self, x):
         #applying the sigmoid function
-        return 1 / (1 + np.exp(-x))
+        return round((1 / (1 + np.exp(-x))),6)
 
     def sigmoid_derivative(self, x):
         #computing derivative to the Sigmoid function
